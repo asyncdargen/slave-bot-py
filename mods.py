@@ -14,11 +14,13 @@ class BuyMode:
             self.dl_delay = config.read("DELAYED.DELAY")
             self.log = log
             self.client = client
+            self.slaves = []
             print("Включен режим автозакупки")
             Thread(target=self.start).start()
 
-    def delayed(self, id, cd):
-        time.sleep(cd)
+    def delayed(self):
+        time.sleep(self.dl_delay if self.dl else 0.1)
+        id = self.slaves.pop()
         profit = 1
         if self.job:
             time.sleep(random.random() + 0.5)
@@ -40,7 +42,8 @@ class BuyMode:
             self.client.buy(id)
             self.log.debug(f'Куплен раб vk.com/id{id}')
             if self.job or self.fetter:
-                Thread(target=self.delayed(id, (self.dl_delay if self.dl else 0.1))).start()
+                self.slaves.append(id)
+                Thread(target=self.delayed).start()
             time.sleep(self.delay + random.random())
 
 
