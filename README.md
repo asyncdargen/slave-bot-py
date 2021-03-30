@@ -115,7 +115,9 @@
  - Распакуйте архив в любую папку
  - Найстройте `config.py` 
  - Откройте `cmd` *(Командную строку)*
- - И пропишите `python bot.py` *(Для некоторых версий `python3 bot.py`)*
+ - И пропишите:
+   - `pip install requests`   
+   - `python bot.py` *(Для некоторых версий `python3 bot.py`)*
  - Для остановки нажмите `CTRL +C` или закройте консоль
 
 
@@ -124,6 +126,7 @@
  - Открываем и пишем:
    - `pkg install -y git`
    - `pkg install -y python`
+   - `pip install requests`   
    - `git clone` https://github.com/asyncdargen/slave-bot-py
    - `python bot.py` *(Для некоторых версий `python3 bot.py`)*
  - Для остановки нажмите `CTRL +C` или завершите сессию
