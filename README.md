@@ -1,3 +1,4 @@
+[![Загрузки](https://img.shields.io/github/downloads/asyncdargen/slave-bot-py/total.svg)]()
 # slave-bot by dargen
  
 Этот бот написан для мини-игры в [VK](https://vk.com) 'Рабы'
