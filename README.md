@@ -124,16 +124,28 @@
 ## Установка на Android через Termux
  - Устанавливаем Termux
  - Открываем и пишем:
-   - `pkg install -y git`
-   - `pkg install -y python`
+   - `pkg install -y git python`
    - `pip install requests`   
+   - `termux-setup-storage`
+   - `cd ~/storage/`
    - `git clone` https://github.com/asyncdargen/slave-bot-py
+ - Теперь надо настроить конфиг:
+   - Качаем любой текстовый редактор, например [Code Editor](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
+   - Запускаем и ищем там конпку открыть файл или диспетчер памяти
+   - Нажимаем и переходим в память телефона открываем
+   - Ищем и открываем папку `slave-bot-py` и в ней выбираем файл `config.py`
+   - Редактируем все что надо и сохроняем
+ - Переходим в Termux и пишем команду:
    - `python bot.py` *(Для некоторых версий `python3 bot.py`)*
+ - Для перезапуска если вы вышли из консоли допустим:
+   - `cd ~/storage/slave-bot-vk`
+   - Пишем последнюю команду в инструкции по установке
  - Для остановки нажмите `CTRL +C` или завершите сессию
 
 
 ## Переустанновка
  - **Termux:**
+   - `cd ~/storage/`
    - `rm -rf slave-bot-py`
    - `git clone` https://github.com/asyncdargen/slave-bot-py
  - **Windows:**
