@@ -1,6 +1,8 @@
 
 # slave-bot by dargen
  
+ 
+ **ПРОЕКТ ДАННОГО БОТА ЗАКРЫТ! НОВЫЙ БОТ ДЛЯ `ВРАБСТВО` [*ТУТ*](https://github.com/asyncdargen/slave3-bot-py)**
 Этот бот написан для мини-игры в [VK](https://vk.com) 'Рабы'
 
 Если возникли ошибки или появился фикс пишите в любую сеть из [контактов](https://github.com/asyncdargen/slave-bot-py#контакты)
